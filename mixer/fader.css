@@ -1,0 +1,76 @@
+input[type=range].fader {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 4.6px 0;
+}
+input[type=range].fader:focus {
+  outline: none;
+}
+input[type=range].fader::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: default;
+  background: #484d4d;
+  border: 0px solid #010101;
+}
+input[type=range].fader::-webkit-slider-thumb {
+  box-shadow: 0px 0px 4px #000000, 0px 0px 0px #0d0d0d;
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  height: 20px;
+  width: 35px;
+  background: linear-gradient(to right, rgba(201,201,201,0.95) 0%,rgba(241,241,241,0.95) 15%,rgba(119,119,119,0.95) 20%,rgba(137,137,137,0.95) 48%,rgba(0,0,0,0.95) 50%,rgba(137,137,137,0.95) 52%,rgba(241,241,241,0.95) 80%,rgba(145,145,145,0.95) 85%,rgba(91,91,91,0.95) 100%);
+  cursor: default;
+  -webkit-appearance: none;
+  margin-top: -7.5px;
+}
+input[type=range].fader:focus::-webkit-slider-runnable-track {
+  background: #484d4d;
+}
+input[type=range].fader::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: default;
+  background: #484d4d;
+  border: 0px solid #010101;
+}
+input[type=range].fader::-moz-range-thumb {
+  box-shadow: 0px 0px 4px #000000, 0px 0px 0px #0d0d0d;
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  height: 20px;
+  width: 35px;
+  background: linear-gradient(to right, rgba(201,201,201,0.95) 0%,rgba(241,241,241,0.95) 15%,rgba(119,119,119,0.95) 20%,rgba(137,137,137,0.95) 48%,rgba(0,0,0,0.95) 50%,rgba(137,137,137,0.95) 52%,rgba(241,241,241,0.95) 80%,rgba(145,145,145,0.95) 85%,rgba(91,91,91,0.95) 100%);
+  cursor: default;
+}
+input[type=range].fader::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: default;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range].fader::-ms-fill-lower {
+  background: #484d4d;
+  border: 0px solid #010101;
+  border-radius: 16px;
+}
+input[type=range].fader::-ms-fill-upper {
+  background: #484d4d;
+  border: 0px solid #010101;
+  border-radius: 16px;
+}
+input[type=range].fader::-ms-thumb {
+  box-shadow: 0px 0px 4px #000000, 0px 0px 0px #0d0d0d;
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  height: 20px;
+  width: 35px;
+  background: linear-gradient(to right, rgba(201,201,201,0.95) 0%,rgba(241,241,241,0.95) 15%,rgba(119,119,119,0.95) 20%,rgba(137,137,137,0.95) 48%,rgba(0,0,0,0.95) 50%,rgba(137,137,137,0.95) 52%,rgba(241,241,241,0.95) 80%,rgba(145,145,145,0.95) 85%,rgba(91,91,91,0.95) 100%);
+  cursor: default;
+  height: 5px;
+}
+input[type=range].fader:focus::-ms-fill-lower {
+  background: #484d4d;
+}
+input[type=range].fader:focus::-ms-fill-upper {
+  background: #484d4d;
+}

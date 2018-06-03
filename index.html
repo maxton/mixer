@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maxton's Music</title>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/mixer/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/mixer/fader.css"/>
+    <script type="text/javascript" src="/mixer/wavesurfer.min.js">
+      /*
+       * WaveSurfer.js - github.com/katspaugh/wavesurfer.js
+       * licensed under CC BY 3.0 (creativecommons.org/licenses/by/3.0/deed.en_US)
+       */
+    </script>
+    <script type="text/javascript" src="/mixer/manifest.js"></script>
+    <script type="text/javascript" src="/mixer/mixer.js"></script>
+  </head>
+  <body>
+    <h1>Maxton's Music</h1>
+    <h2>Multitrack Mixer</h2>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(event){
+        var vid = document.createElement('video');
+        var isSupp = vid.canPlayType('audio/ogg; codecs="vorbis"');
+        var el = document.getElementById("mixerTarget");
+        el.innerHTML = "";
+        if(isSupp === "probably" || isSupp === "maybe"){
+          var mixer = new Mixer();
+          mixer.init(el, songInfos);
+        } else {
+          el.innerHTML = "<section>Sorry, your device or browser does not support Ogg Vorbis audio.</section>";
+        }
+      });
+    </script>
+    <div id="mixerTarget">The mixer goes here</div>
+    <p style="text-align:center">Note: Your browser must support Ogg Vorbis audio to use the mixer (Firefox, Chrome, or Opera should work)</p>
+    <h2>About</h2>
+    <section>
+      On this page, you can play around with the multitrack recordings to my covers and original compositions!
+    </section>
+    <br>
+  </body>
+</html>
