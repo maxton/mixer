@@ -1,4 +1,35 @@
 var songInfos = {
+"funky": {
+    "name": "Maxton - BGM1",
+    "e": false,
+    "tracks": [
+      {
+        "name": "Drums",
+        "path": "/mixer/stems/funky/funky-PCM.ogg",
+        "channels": 2
+      },
+      {
+        "name": "Bass",
+        "path": "/mixer/stems/funky/funky-2612-1.ogg",
+        "channels": 2
+      },
+      {
+        "name": "Chords",
+        "path": "/mixer/stems/funky/funky-2612-2.ogg",
+        "channels": 2
+      },
+      {
+        "name": "Arpeggios",
+        "path": "/mixer/stems/funky/funky-PSG.ogg",
+        "channels": 2
+      },
+      {
+        "name": "Lead",
+        "path": "/mixer/stems/funky/funky-2612-3.ogg",
+        "channels": 2
+      },
+    ]
+ },
 "habitablezone" : {
     "name": "Maxton - Habitable Zone",
     "e": false,
